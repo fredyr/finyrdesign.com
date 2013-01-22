@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<section class="main">
+
+<div class="container extra-top-padding">
+    <article class="item" style="margin-right: 3em;">
+        <a class="fancybox" href="{{ page.thumbnail }}">
+            <img src="{{ page.thumbnail }}">
+        </a>
+        <span>{{page.category}}</span> <span style="font-size: 0.7em;">{{page.dimension}}</span>
+        <p><strong>{{ page.title }}</strong></p>
+    </article>
+
+    <div style="margin-top: 1em;">
+        <h1>{{page.category}} &mdash; {{page.title}}</h1>
+        <div class="buy">
+            <span class="price">{{page.price}} kr</span>
+            <a href="#" id="buy_now" class="buy-button">K&ouml;p</a>
+            <span style="margin-left: 2em;">
+                <img src="/img/icons/Paypal.png" class="payment-method">
+                <img src="/img/icons/MasterCard.png" class="payment-method">
+                <img src="/img/icons/Visa.png" class="payment-method">
+                <span class="info"><a href="/terms.html">Så här handlar du!</a></span>
+            </span>
+            <div class="info">
+                <em>Pris inkl. moms och frakt. Tänk på att kontrollera din leveransadress vid betalning.</em>
+            </div>
+        </div>
+        {{ content }}
+
+        <form id="add_to_chart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="josefin.dyrkell@gmail.com">
+        <input type="hidden" name="lc" value="SE">
+        <input type="hidden" name="item_name" value="{{page.title}} {{page.dimension}} ({{page.item_number}})">
+        <input type="hidden" name="item_number" value="{{page.item_number}}">
+        <input type="hidden" name="amount" value="{{page.price | times:0.8}}">
+        <input type="hidden" name="currency_code" value="SEK">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="25.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        </form>
+    </div>
+
+    <div id="images" style="margin: 2em 0;">
+        {% for image in page.images %}
+        <a class="fancybox" href="{{image}}">
+            <img src="{{image}}" class="thumb">
+        </a>
+        {% endfor %}
+    </div>
+
+    <a href="/">&larr;&nbsp; Tillbaka</a>
+    <div class="clearfix"></div>
+</div>
+</section>
+

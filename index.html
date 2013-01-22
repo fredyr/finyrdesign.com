@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% if paginator.page == 1 %}
+<div class="container extra-top-padding">
+    <section>
+        <aside>
+<img src="/img/josefinram6.png" style="position: relative; top: -60px; width: 300px; float: right; margin: 2.5em;">
+
+<h1>Designade filtar och planscher som present</h1>
+<p>
+Välkommen till min fantasivärld bland yra apor och glasögonbeprydda nallebjörnar. Jag hoppas att du ska finna presenter här som kan finnas med länge.
+</p>
+<p>
+Aporna på filtarna föddes när jag satt och ritade djungeldjur för att trycka på min sons tröja. Från tröjan hamnade de på en barnstol som auktionerades ut på Svenska Mässan i Stockoholm till förmån för Childhood Foundation <a href="http://www.idg.se/2.1085/1.205757/robust-far-nya-farger">(Artikel i Cap &amp; Design)</a> <a href="http://www.uppdragbarn.se/2009/02/04/buda-pa-klassisk-barnstol-i-ny-tappning/">(Artikel på uppdragbarn.se)</a>. Där ifrån, med en och annan avstickare, så svingade de sig vidare till de mjuka, svensktillverkade bomullsfiltarna.
+</p>
+<p>
+För mina produkter försöker jag hitta tillverkare inom Sverige eller Europa för att minska frakt och hålla ner miljöbelastningen något. Filtarna är därför vävda hos Linneväveriet i Horred och planscherna är upptryckta på ett lokalt tryckeri.
+</p>
+
+            <hr>
+        </aside>
+    </section>
+</div>
+{% else %}
+<div class="extra-top-padding">&nbsp;</div>
+{% endif %}
+<div class="container-wide">
+    <section id="masonry">
+        {% for post in paginator.posts %}
+        <article class="item">
+            <a href="{{ post.url }}"><img src="{{ post.thumbnail }}">
+            <span>{{post.category}}</span> <span style="font-size: 0.7em;">{{post.dimension}}</span>
+            <p><strong>{{ post.title }}</strong></p>
+            </a>
+        </article>
+        {% endfor %}
+    </section>
+
+    <nav class="pagination">
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/" class="previous">&larr; Bak&aring;t</a>
+            {% else %}
+                <a href="/page{{paginator.previous_page}}" class="previous">&larr; Bak&aring;t</a>
+            {% endif %}
+      {% endif %}
+      <span class="page_number light">Sida {{paginator.page}} av {{paginator.total_pages}}</span>
+      {% if paginator.next_page %}
+        <a href="/page{{paginator.next_page}}" class="next ">N&auml;sta &rarr;</a>
+      {% endif %}
+    </nav>
+
+</div>
+
+
+

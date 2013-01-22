@@ -1,0 +1,238 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 1.0em;
+    color: #343434;
+    background-color: #F4F4F1;
+}
+h1, h2, h3 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+}
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+}
+
+hr {
+    border: 0;
+    background-color: lightgray;
+    height: 1px;
+    margin: 2em 0;
+}
+
+a, a:visited, a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.main ul { list-style-type: none; line-height: 1.75em; margin: .5em 0; }
+.main ul li:before{ content: "-"; position: relative; left: -.5em;}
+.main ul li{ text-indent:.5em; }
+
+.logo {
+    position: absolute;
+    height: 120px;
+    top: 0;
+    display: block;
+    margin: 1em 0;
+    z-index: 9999;
+}
+
+.icon {
+    height: 40px;
+    opacity: .4;
+    margin: 0;
+}
+.icon-link {
+}
+.icon-text {
+    position: relative;
+    display: inline-block;
+    top: -15px;
+}
+
+blockquote {
+    color: black;
+    margin-left: 1.5em;
+}
+
+.extra-top-padding {
+    padding-top: 3em;
+}
+
+header {
+    margin: 0;
+    height: 109px;
+    background: white;    
+}
+
+.header-bottom {
+    display: block;
+    position: relative;
+    top: 84px;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, .15);
+    line-height: 1.5em;
+    background: #898989;
+}
+
+
+footer {
+    margin: 3em 0;
+    color: gray;
+}
+
+.item {
+    display: block;
+    width: 290px;
+    text-align: center;
+    /*margin: 0 10px 20px 0;*/
+    margin: 10px;
+    /*padding: 20px 10px 0 10px;*/
+    float: left;
+    box-shadow: 0 1px 3px #c9c9c9;
+    background: white;
+    /*border-radius: 3px;*/
+}
+
+/*.item:last {
+    margin-right: 0px;
+}
+*/
+img {
+    max-width: 100%;
+    border: none;
+}
+.thumb {
+    height: 120px;
+    border: 5px solid white;
+    box-shadow: 0 1px 3px #c9c9c9;
+}
+
+
+.buy {
+    display: block;
+    margin: 2em 0;
+
+}
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.payment-method {
+    height: 20px;
+}
+.buy-button {
+    /*text-transform: uppercase;*/
+    background: #CC301B;
+    text-shadow: 0 2px rgba(0, 0, 0, .15);
+    color: white!important;
+    border-radius: 5px;
+    margin: 0 .5em;
+    padding: .4em .8em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+}
+.info {
+    margin-top: 1em;
+    font-size: .8em;
+}
+
+nav ul {
+    color: #ddd;
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+}
+nav ul li {
+    float: left;
+    margin: 0 .5em;
+    /*padding: 0.5em 0.6em 0.4em;*/
+}
+
+nav ul li a {
+    color: #888!important;
+    font-weight: normal;
+}
+
+.floating-right {
+    float: right;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+.container-wide {
+    margin: 0 auto;
+    width: 960px;
+}
+
+section {
+    padding-top: 20px;
+}
+.pagination {
+    margin: 1em 0;
+}
+.page_number {
+    margin: 0 .5em;
+}
+
+.light {
+    color: gray;
+}
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('/fonts/websymbols-regular-webfont.eot');
+    src: url('/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tag {
+    padding: 2px 12px;
+    border-radius: 3px;
+}
+.blue {
+    background: #3F5D79;
+    border: 1px solid #31465A;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, .5);
+}
+
+.symbol {
+  font: 1.2em "WebSymbolsRegular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+.symbol-red {
+    color: #9E2020;
+}
+.symbol-black {
+    color: #505050;
+}
+
+.clearfix {
+    clear: both;
+}

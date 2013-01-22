@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+        <script src="/js/jquery-1.8.3.min.js"></script>
+        <script src="/js/jquery.masonry.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css" />
+        <script src="/js/jquery.fancybox.pack.js"></script>
+    </head>
+    <body>
+        <header class="card">
+            <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" class="icon-link"><img src="/img/icons/hem.png" class="icon"><span class="icon-text">Hem</span></a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" class="icon-link"><img src="/img/icons/om.png" class="icon"><span class="icon-text">Kontakt</span></a>
+                    </li>
+                    <li>
+                        
+                        <a href="/terms.html" class="icon-link"><img src="/img/icons/villkor.png" class="icon"><span class="icon-text">Villkor</span></a>
+                    </li>
+                    <li>
+<form id="view_cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<img src="/img/icons/kundvagn.png" class="icon">
+<a id="shopping_cart" href="#" class="buy-button icon-text" > Varukorg</a>
+</form>             </li>
+                </ul>
+            </nav>
+
+            <a href="/"><img src="/img/finyr_logo.png" class="logo"></a>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <span style="margin-left: 13em;font-size: 0.75em;">Josefin Dyrkell Industridesign</span>
+                </div>
+            </div>
+        </header>
+    {{ content }}
+    <footer>
+        <div class="container">
+            <hr>
+            <p>
+                &copy; Copyright Josefin Dyrkell, 2012 &mdash; <a href="mailto:josefin.dyrkell@gmail.com?subject=finyr%20design">josefin.dyrkell@gmail.com</a> 
+                <a href="http://pinterest.com/josdyr/"><img src="http://passets-lt.pinterest.com/images/about/buttons/pinterest-button.png" width="80" height="28" alt="Follow Me on Pinterest" style="position: relative; top: 6px; margin-left: .6em;"/></a>
+                <!-- <a href="http://pinterest.com/josdyr/">Pinterest</a> -->
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        $('#masonry').imagesLoaded(function() {
+            $('#masonry').masonry({
+                itemSelector : '.item',
+                columnWidth : 1,
+                gutterWidth: 25,
+            });
+        });
+        
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+
+        $("#buy_now").click(function() {
+            document.forms.add_to_chart.submit();
+        });
+        $("#shopping_cart").click(function() {
+            document.forms.view_cart.submit();
+        });
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36750116-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</body>
+</html>
