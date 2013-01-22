@@ -24,4 +24,4 @@ Filtarna är märkta med Bra Miljöval, Naturskyddsföreningens miljömärke. Vi
 
 ![tvättråd](/img/icons/caresymbols.png)
 - Tvättas separat första gången. Tvättas varmare vid behov, de tål 95°C. Se tvättsymbolerna på varans etikett.
-- För bästa släthet, fukta först och styk sedan i textilienslängdriktning.
+- För bästa släthet, fukta först och styk sedan i textiliens längdriktning.
