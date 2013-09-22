@@ -1,1 +1,2 @@
 paginate: 9
+permalink: /:year/:month/:day/:title.html
